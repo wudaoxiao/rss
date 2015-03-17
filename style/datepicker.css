@@ -1,0 +1,224 @@
+/*
+   日历组件样式
+*/
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form,li{margin:0;}
+input{padding:0;}
+ul,ol{list-style: none;margin:0; padding:0;}
+img{border:0;-ms-interpolation-mode: bicubic; }
+html {font-size: 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
+body{font-size:12px;font-family: Arial,"SimSun";}
+.example{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.datepickerinput{
+    border: solid 1px #ccc;
+    font-size: 12px;
+    color: #333;
+    width: 170px;
+    padding: 4px 5px;
+    height: 15px;
+    line-height: 15px;
+    vertical-align: baseline;
+    outline: none;
+    background: url("../image/calendar.gif") no-repeat right center;
+}
+.datepickerinput::-ms-clear{display:none;}
+.datepicker_container{
+    border: solid 1px #666666;
+    padding: 10px 5px;
+    display: inline-block;
+    background: #fff;
+}
+.calendar{
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+}
+.calendar .right_quickButton{
+    float: right;
+}
+.cal-outerbox{
+    float: left;
+    background: url("../image/cal-border.gif") repeat-y;
+}
+.cal-box{
+    zoom: 1;
+    position: relative;
+    overflow: hidden;
+    background: url("../image/cal-borderbottom.gif") no-repeat 0 bottom;
+}
+.cal-box:after,.calendar:after,.calendar .right-select:after{
+    visibility:hidden;
+    display:block;
+    font-size:0;
+    content:" ";
+    clear:both;
+    height:0;
+}
+.cal-container{
+    float: left;
+    margin: 0 5px;
+    width: 220px;
+    border: solid 1px #e8e8e8;
+    border-bottom: none;
+    display: inline;
+}
+
+.cal-container dt{
+    float: left;
+    width: 30px;
+    line-height: 22px;
+    vertical-align: baseline;
+    color: #333;
+    font-size: 12px;
+    background: #e8e8e8;
+    text-align: center;
+}
+.cal-container .date{
+    float: none;
+    display: block;
+    clear: right;
+    background: #676767;
+    line-height: 22px;
+    color: #fff;
+    text-align: center;
+    width: 222px;
+    margin:0 -1px;
+}
+.cal-container .date select{
+    outline: none;
+    border: none;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    vertical-align: baseline;
+    margin-top: 1px;
+}
+.cal-container .cal-sunday{
+    padding-left: 5px;
+}
+.cal-container .cal-saturday{
+    padding-right: 5px;
+}
+.cal-container dt strong{
+    color: #903;
+}
+.cal-container dd{
+    clear: left;
+    padding: 5px 5px 10px;
+    overflow: hidden;
+    width: 210px;
+}
+.cal-container dd a{
+    float: left;
+    width: 30px;
+    display: inline-block;
+    line-height: 17px;
+    vertical-align: baseline;
+    text-align: center;
+    color: #666;
+    text-decoration: none;
+    margin-top: 5px;
+    overflow: hidden;
+}
+.cal-container dd a:hover{
+    color: #666;
+    text-decoration: none;
+}
+.cal-container dd .disabled{
+    color: #ccc;
+}
+.cal-container dd .disabled:hover{
+    color: #ccc;
+}
+.cal-container dd a span{
+    font-size: 10px;
+    color: #903;
+    width: 30px;
+    line-height: 17px;
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+}
+.cal-container dd .disabled span{
+    color: #ccc;
+}
+.cal-box .cal-prev,.cal-box .cal-next{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    text-indent: 22em;
+    overflow: hidden;
+    background: url("../image/cal-icon.gif") no-repeat 8px 6px;
+    cursor: pointer;
+}
+.cal-box .cal-prev{
+    top: 0;
+    left: 5px;
+}
+.cal-box .cal-next{
+    top: 0;
+    right: 5px;
+    background-position: 6px -15px
+}
+.calendar .bottom_button{
+    clear: both;
+    text-align: center;
+    padding-top: 10px;
+}
+.cal-close{
+    position: absolute;
+    right: -19px;
+    top:-1px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url("../image/cal-icon.gif") no-repeat center -36px #666;
+    text-indent: -18em;
+    cursor: pointer;
+    z-index: 999;
+    overflow: hidden;
+}
+.calendar .bottom_button a,.calendar .bottom_button a:hover{
+    line-height: 25px;
+    vertical-align: baseline;
+    width: 55px;
+    display: inline-block;
+    background: url("../image/cal-icon.gif") repeat-x left bottom #666;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.calendar .bottom_button .button-close,.calendar .bottom_button .button-close:hover{
+    background: none;
+    color: #666;
+}
+.cal-container dd a.select-range:hover,.cal-container dd .select-range{
+    background: #666;
+    color: #fff;
+}
+.calendar .right-select{
+    zoom: 1;
+    width: 170px;
+    padding: 22px 0;
+}
+.calendar .right-select li{
+    float: left;
+    width: 75px;
+    padding: 3px 5px;
+    text-align: center;
+}
+.calendar .right-select li a,.calendar .right-select li a:hover{
+    display: block;
+    line-height: 22px;
+    vertical-align: baseline;
+    color: #666;
+    text-decoration: none;
+}
+.calendar .right-select li .cal-selected,.calendar .right-select li .cal-selected:hover{
+    background: #666;
+    color: #fff;
+    text-decoration: none;
+}

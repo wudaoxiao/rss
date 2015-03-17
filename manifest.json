@@ -1,0 +1,79 @@
+{
+  "manifest_version": 2,
+  "name": "RSS 订阅",
+  "description": "This extension demonstrates a browser action with kittens.",
+  "version": "1.0",
+  //    "http://www.zaoduke.net/fe.php",
+  //http://www.w3cplus.com/
+  //  "http://club.alibabatech.org/",暂无RSS功能
+  //    "http://sofish.de/",
+  "permissions": [
+    "http://cued.xunlei.com/",
+    "http://tid.tenpay.com/",
+    "http://tid.tenpay.com/",
+    "http://mxd.tencent.com/",
+    "http://mux.alimama.com/",
+    "http://mued.sohu.com/",
+    "http://ued.focus.cn/",
+    "http://ued.ctrip.com/blog/",
+    "http://udc.weibo.com/",
+    "http://ued.sina.com/",
+    "http://www.aliued.cn/",
+    "http://www.kdued.com/",
+    "http://ued.baidu.com/",
+    "http://mux.baidu.com/",
+    "http://uedc.163.com/",
+    "http://mweb.baidu.com/",
+    "http://qqfe.org/",
+    "http://gux.163.com/",
+    "http://fex.baidu.com/",
+    "http://uec.nq.com/",
+    "http://jdc.jd.com/",
+    "http://isux.tencent.com/",
+    "http://cdc.tencent.com/",
+    "http://uxc.360.cn/",
+    "http://www.75team.com/",
+    "http://www.wxwdesign.com/",
+    "http://forcefront.com/",
+    "http://www.css88.com/",
+    "http://mweb.baidu.com/",
+    "http://www.qianduan.net/",
+    "http://www.zhangxinxu.com/",
+    "http://fex.baidu.com/",
+    "http://www.36ria.com/",
+    "http://www.alloyteam.com/",
+    "http://www.cnblogs.com/",
+    "http://www.itzhai.com/",
+    "http://www.36ria.com/",
+    "http://www.alloyteam.com/",
+    "http://peters-playground.com/",
+    "http://www.semyj.com/",
+    "http://blog.sina.com.cn/",
+    "http://www.seozac.com/",
+    "http://fed.renren.com/",
+    "http://feed.feedsky.com/",
+    "http://udc.weibo.com/",
+    "http://ued.sohu.com/",
+    "http://feed.paranimage.com/",
+    "http://feed.feedsky.com/",
+    "http://blog.19ued.com/",
+    "http://fed.renren.com/",
+    "http://ued.ctrip.com/"
+  ],
+  "icons": {
+    "16": "image/icon16.png",
+    "48": "image/icon48.png",
+    "64": "image/icon64.png",
+    "128": "image/icon128.png"
+  },
+  "app": {
+    "launch": {
+      "local_path": "popup.html"
+    }
+  }
+
+  //  "browser_action": {
+  //    "default_icon": "icon.png",
+  //    "default_popup": "popup.html"
+  //  }
+}
